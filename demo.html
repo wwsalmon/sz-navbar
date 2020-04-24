@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/ww-navbar.css" type="text/css">
+        <style>
+            body{
+                margin: 0;
+                background-color: #222;
+            }
+
+            .ww-navbar{
+                padding: 0 24px;
+                height: 48px; /* overriding default 64px height */
+            }
+
+            @media (min-width: 600px){
+                div.ww-navbar-item:not(:last-of-type){
+                    margin-right: 24px;
+                }
+
+                .ww-navbar-items{
+                    margin-left: auto;
+                }
+            }
+
+            @media (max-width: 600px){
+                div.ww-navbar-item:not(:last-of-type){
+                    margin-bottom: 24px;
+                }
+
+                .ww-navbar-items{
+                    width: 300px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="ww-navbar ww-navbar-right">
+            <div class="demo-navbar-logo"><span>COMPANY NAME</span></div>
+            <input type="checkbox" id="ww-navbar-check">
+            <label for="ww-navbar-check" class="ww-navbar-hamburger">☰</label>
+            <div class="ww-navbar-items">
+                <div class="ww-navbar-item"><span><a href="link1">Item 1</a></span></div>
+                <div class="ww-navbar-item"><span><a href="link2">Item 2</a></span></div>
+                <div class="ww-navbar-item"><span><a href="link3">Item 3</a></span></div>
+            </div>
+        </div>
+    </body>
+</html>

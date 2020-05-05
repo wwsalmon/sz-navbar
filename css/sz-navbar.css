@@ -1,4 +1,3 @@
-/* IN SASS, OVERRIDE THESE VARIABLES WITH YOUR OWN. IF PLAIN CSS, IGNORE THIS COMMENT */
 .sz-navbar {
   width: 100%;
   height: 64px;
@@ -84,7 +83,6 @@
   .sz-navbar-hamburger {
     position: absolute;
     z-index: 6;
-    /* CENTERING VERTICALLY IN NAVBAR */
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);

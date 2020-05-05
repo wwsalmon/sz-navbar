@@ -1,4 +1,4 @@
-/* IN SASS, OVERRIDE THESE VARIABLES WITH YOUR OWN. IF PLAIN CSS, IGNORE THIS COMMENT */
+// IN SASS, OVERRIDE THESE VARIABLES WITH YOUR OWN. IF PLAIN CSS, IGNORE THIS COMMENT
 $sz-navbar-breakpoint: 600px !default;
 $sz-navbar-transition-time: 0.2s !default;
 $sz-navbar-height: 64px !default;
@@ -7,7 +7,7 @@ $sz-navbar-items-bg-color: #eee !default;
 $sz-navbar-hamburger-margin: 24px !default;
 $sz-navbar-item-margin-hor: 8px !default;
 $sz-navbar-item-margin-vert: 8px !default;
-$sz-navbar-inner-width: 1200px !default;
+$sz-navbar-inner-width: 1200px !default; // TO SPAN FULL SCREEN, SET TO 100%
 
 .sz-navbar{
     width: 100%;
@@ -85,7 +85,7 @@ $sz-navbar-inner-width: 1200px !default;
         position: absolute;
         z-index: 6;
 
-        /* CENTERING VERTICALLY IN NAVBAR */
+        // CENTERING VERTICALLY IN NAVBAR
         top: 50%;
         transform: translateY(-50%);
     }

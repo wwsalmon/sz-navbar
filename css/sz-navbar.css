@@ -37,6 +37,15 @@
   .sz-navbar-hamburger {
     display: none;
   }
+  .sz-navbar-right .sz-navbar-items {
+    margin-left: auto;
+  }
+  .sz-navbar-right .sz-navbar-items .sz-navbar-item {
+    margin-left: 8px;
+  }
+  .sz-navbar-left .sz-navbar-item {
+    margin-right: 8px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -93,5 +102,8 @@
   .sz-navbar-right .sz-navbar-hamburger {
     right: 24px;
     /* OVERRIDE WITH YOUR OWN HAMBURGER BUTTON MARGIN */
+  }
+  div.sz-navbar-item:not(:last-of-type) {
+    margin-bottom: 8px;
   }
 }

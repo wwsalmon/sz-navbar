@@ -5,6 +5,8 @@ $sz-navbar-height: 64px !default;
 $sz-navbar-bg-color: #fff !default;
 $sz-navbar-items-bg-color: #eee !default;
 $sz-navbar-hamburger-margin: 24px !default;
+$sz-navbar-item-margin-hor: 8px !default;
+$sz-navbar-item-margin-vert: 8px !default;
 
 .sz-navbar{
     display: flex;
@@ -32,6 +34,22 @@ $sz-navbar-hamburger-margin: 24px !default;
 @media (min-width: $sz-navbar-breakpoint){
     .sz-navbar-hamburger{
         display: none;
+    }
+
+    .sz-navbar-right{
+        .sz-navbar-items{
+            margin-left: auto;
+
+            .sz-navbar-item{
+                margin-left: $sz-navbar-item-margin-hor;
+            }
+        }
+    }
+
+    .sz-navbar-left{
+        .sz-navbar-item{
+            margin-right: $sz-navbar-item-margin-hor;
+        }
     }
 }
 
@@ -89,5 +107,9 @@ $sz-navbar-hamburger-margin: 24px !default;
         .sz-navbar-hamburger{
             right: $sz-navbar-hamburger-margin; /* OVERRIDE WITH YOUR OWN HAMBURGER BUTTON MARGIN */
         }
+    }
+
+    div.sz-navbar-item:not(:last-of-type){
+        margin-bottom: $sz-navbar-item-margin-vert;
     }
 }

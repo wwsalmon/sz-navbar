@@ -14,23 +14,9 @@
                 height: 48px; /* overriding default 64px height */
             }
 
-            @media (min-width: 600px){
-                div.sz-navbar-item:not(:last-of-type){
-                    margin-right: 24px;
-                }
-
-                .sz-navbar-items{
-                    margin-left: auto;
-                }
-            }
-
             @media (max-width: 600px){
-                div.sz-navbar-item:not(:last-of-type){
-                    margin-bottom: 24px;
-                }
-
                 .sz-navbar-items{
-                    width: 300px;
+                    width: 300px; /* limit width of mobile menu */
                 }
             }
 

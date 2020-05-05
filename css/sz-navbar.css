@@ -1,5 +1,5 @@
 /* IN SASS, OVERRIDE THESE VARIABLES WITH YOUR OWN. IF PLAIN CSS, IGNORE THIS COMMENT */
-.ww-navbar {
+.sz-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +19,7 @@
   /* OVERRIDE WITH YOUR OWN BG COLOR */
 }
 
-.ww-navbar-items {
+.sz-navbar-items {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,23 +29,23 @@
           align-items: center;
 }
 
-#ww-navbar-check {
+#sz-navbar-check {
   display: none;
 }
 
 @media (min-width: 600px) {
-  .ww-navbar-hamburger {
+  .sz-navbar-hamburger {
     display: none;
   }
 }
 
 @media (max-width: 600px) {
-  .ww-navbar {
+  .sz-navbar {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .ww-navbar-items {
+  .sz-navbar-items {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -60,7 +60,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .ww-navbar-hamburger {
+  .sz-navbar-hamburger {
     position: absolute;
     z-index: 6;
     /* CENTERING VERTICALLY IN NAVBAR */
@@ -68,29 +68,29 @@
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .ww-navbar-left .ww-navbar-items {
+  .sz-navbar-left .sz-navbar-items {
     left: 0;
     margin-left: -100%;
     -webkit-transition: margin-left 0.2s ease;
     transition: margin-left 0.2s ease;
   }
-  .ww-navbar-left #ww-navbar-check:checked ~ .ww-navbar-items {
+  .sz-navbar-left #sz-navbar-check:checked ~ .sz-navbar-items {
     margin-left: 0;
   }
-  .ww-navbar-left .ww-navbar-hamburger {
+  .sz-navbar-left .sz-navbar-hamburger {
     left: 24px;
     /* OVERRIDE WITH YOUR OWN HAMBURGER BUTTON MARGIN */
   }
-  .ww-navbar-right .ww-navbar-items {
+  .sz-navbar-right .sz-navbar-items {
     right: 0;
     margin-right: -100%;
     -webkit-transition: margin-right 0.2s ease;
     transition: margin-right 0.2s ease;
   }
-  .ww-navbar-right #ww-navbar-check:checked ~ .ww-navbar-items {
+  .sz-navbar-right #sz-navbar-check:checked ~ .sz-navbar-items {
     margin-right: 0;
   }
-  .ww-navbar-right .ww-navbar-hamburger {
+  .sz-navbar-right .sz-navbar-hamburger {
     right: 24px;
     /* OVERRIDE WITH YOUR OWN HAMBURGER BUTTON MARGIN */
   }

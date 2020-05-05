@@ -1,0 +1,93 @@
+/* IN SASS, OVERRIDE THESE VARIABLES WITH YOUR OWN. IF PLAIN CSS, IGNORE THIS COMMENT */
+$sz-navbar-breakpoint: 600px !default;
+$sz-navbar-transition-time: 0.2s !default;
+$sz-navbar-height: 64px !default;
+$sz-navbar-bg-color: #fff !default;
+$sz-navbar-items-bg-color: #eee !default;
+$sz-navbar-hamburger-margin: 24px !default;
+
+.sz-navbar{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: $sz-navbar-height; /* OVERRIDE WITH YOUR OWN HEIGHT */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: $sz-navbar-bg-color; /* OVERRIDE WITH YOUR OWN BG COLOR */
+}
+
+.sz-navbar-items{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#sz-navbar-check{
+    display: none;
+}
+
+@media (min-width: $sz-navbar-breakpoint){
+    .sz-navbar-hamburger{
+        display: none;
+    }
+}
+
+@media (max-width: $sz-navbar-breakpoint){
+    .sz-navbar{
+        justify-content: center;
+    }
+
+    .sz-navbar-items{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: $sz-navbar-items-bg-color; /* OVERRIDE WITH YOUR OWN MENU BG COLOR */
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .sz-navbar-hamburger{
+        position: absolute;
+        z-index: 6;
+
+        /* CENTERING VERTICALLY IN NAVBAR */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .sz-navbar-left{
+        .sz-navbar-items{
+            left: 0;
+            margin-left: -100%;
+            transition: margin-left $sz-navbar-transition-time ease;
+        }
+
+        #sz-navbar-check:checked ~ .sz-navbar-items{
+            margin-left: 0;
+        }
+
+        .sz-navbar-hamburger{
+            left: $sz-navbar-hamburger-margin; /* OVERRIDE WITH YOUR OWN HAMBURGER BUTTON MARGIN */
+        }
+    }
+
+    .sz-navbar-right{
+        .sz-navbar-items{
+            right: 0;
+            margin-right: -100%;
+            transition: margin-right $sz-navbar-transition-time ease;
+        }
+
+        #sz-navbar-check:checked ~ .sz-navbar-items{
+            margin-right: 0;
+        }
+
+        .sz-navbar-hamburger{
+            right: $sz-navbar-hamburger-margin; /* OVERRIDE WITH YOUR OWN HAMBURGER BUTTON MARGIN */
+        }
+    }
+}

@@ -10,8 +10,11 @@
             }
 
             .sz-navbar{
-                padding: 0 24px;
                 height: 48px; /* overriding default 64px height */
+            }
+
+            .sz-navbar-inner{
+                padding: 0 24px;
             }
 
             @media (max-width: 600px){
@@ -23,14 +26,16 @@
         </style>
     </head>
     <body>
-        <div class="sz-navbar sz-navbar-right">
-            <div class="demo-navbar-logo"><span>COMPANY NAME</span></div>
-            <input type="checkbox" id="sz-navbar-check">
-            <label for="sz-navbar-check" class="sz-navbar-hamburger">☰</label>
-            <div class="sz-navbar-items">
-                <div class="sz-navbar-item"><span><a href="link1">Item 1</a></span></div>
-                <div class="sz-navbar-item"><span><a href="link2">Item 2</a></span></div>
-                <div class="sz-navbar-item"><span><a href="link3">Item 3</a></span></div>
+        <div class="sz-navbar">       
+            <div class="sz-navbar-inner sz-navbar-right">
+                <div class="demo-navbar-logo"><span>COMPANY NAME</span></div>
+                <input type="checkbox" id="sz-navbar-check">
+                <label for="sz-navbar-check" class="sz-navbar-hamburger">☰</label>
+                <div class="sz-navbar-items">
+                    <div class="sz-navbar-item"><span><a href="link1">Item 1</a></span></div>
+                    <div class="sz-navbar-item"><span><a href="link2">Item 2</a></span></div>
+                    <div class="sz-navbar-item"><span><a href="link3">Item 3</a></span></div>
+                </div>
             </div>
         </div>
     </body>

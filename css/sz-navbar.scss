@@ -7,18 +7,24 @@ $sz-navbar-items-bg-color: #eee !default;
 $sz-navbar-hamburger-margin: 24px !default;
 $sz-navbar-item-margin-hor: 8px !default;
 $sz-navbar-item-margin-vert: 8px !default;
+$sz-navbar-inner-width: 1200px !default;
 
 .sz-navbar{
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
     width: 100%;
     height: $sz-navbar-height; /* OVERRIDE WITH YOUR OWN HEIGHT */
+    background-color: $sz-navbar-bg-color; /* OVERRIDE WITH YOUR OWN BG COLOR */
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.sz-navbar-inner{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
     z-index: 5;
-    background-color: $sz-navbar-bg-color; /* OVERRIDE WITH YOUR OWN BG COLOR */
 }
 
 .sz-navbar-items{
@@ -32,6 +38,13 @@ $sz-navbar-item-margin-vert: 8px !default;
 }
 
 @media (min-width: $sz-navbar-breakpoint){
+    .sz-navbar-inner{
+        max-width: $sz-navbar-inner-width;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .sz-navbar-hamburger{
         display: none;
     }
@@ -54,7 +67,7 @@ $sz-navbar-item-margin-vert: 8px !default;
 }
 
 @media (max-width: $sz-navbar-breakpoint){
-    .sz-navbar{
+    .sz-navbar-inner{
         justify-content: center;
     }
 

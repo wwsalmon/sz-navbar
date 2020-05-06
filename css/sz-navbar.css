@@ -7,6 +7,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 
 .sz-navbar-inner {
@@ -20,7 +21,6 @@
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  z-index: 5;
 }
 
 .sz-navbar-items {

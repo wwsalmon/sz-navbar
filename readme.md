@@ -14,6 +14,12 @@ Instructions on how to set things up yourself are below.
 
 ## Installation
 
+### Using npm
+
+Install sz-navbar with `npm i sz-navbar`, then import in your project with `import 'sz-navbar'`. You will now be able to make use of sz-navbar classes (see Usage section below). Import sz-navbar before other stylesheets so that the default styles get overridden.
+
+### Not using npm
+
 First, include the CSS file.
 
 There are three options in the `/css` folder of this repo: a standard CSS file if you want to make changes to default values directly, a minified version if you would rather override them in a separate file, and an SCSS file if you're using SCSS, in which case you can override default variables.

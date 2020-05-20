@@ -3,6 +3,11 @@
   "version": "1.0.1",
   "description": "as basic as possible pure CSS responsive navbar library",
   "main": "css/sz-navbar.min.css",
+  "files": [
+    "css/sz-navbar.scss",
+    "css/sz-navbar.css",
+    "css/sz-navbar.min.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

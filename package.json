@@ -1,6 +1,6 @@
 {
   "name": "sz-navbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "as basic as possible pure CSS responsive navbar library",
   "main": "css/sz-navbar.min.css",
   "scripts": {
